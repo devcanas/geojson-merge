@@ -1,0 +1,10 @@
+{
+  "output": "build",
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "covid_read",
+    "password": ".v4CTeXSpkam",
+    "name": "nos"
+  }
+}

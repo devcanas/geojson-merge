@@ -1,0 +1,28 @@
+{
+  "name": "geojson-merge",
+  "version": "1.0.0",
+  "description": "A tool to merge multiple geojsons together",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=dev && node --max-old-space-size=8192 geojsonMerge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicenteCancioCanas/geojson_translate.git"
+  },
+  "author": "Vicente Canas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vicenteCancioCanas/geojson_translate/issues"
+  },
+  "dependencies": {
+    "config": "^3.3.3",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "short-uuid": "^4.1.0",
+    "slow-json-stringify": "^2.0.0",
+    "stream-json": "^1.7.1",
+    "uuid": "^8.3.1"
+  }
+}
