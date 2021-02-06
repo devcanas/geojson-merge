@@ -1,20 +1,21 @@
 {
   "name": "geojson-merge",
   "version": "1.0.0",
-  "description": "A tool to merge multiple geojsons together",
+  "description": "A tool to save risk properties in a db to use later in the client and avoid creating too big of a file",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "dev": "export NODE_ENV=dev && node --max-old-space-size=8192 geojsonMerge.js"
+    "dev": "export NODE_ENV=dev && node --max-old-space-size=8192 index.js",
+    "prod": "export NODE_ENV=prod && node --max-old-space-size=8192 index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vicenteCancioCanas/geojson_translate.git"
+    "url": "git+https://github.com/vicenteCancioCanas/geojson_merge.git"
   },
   "author": "Vicente Canas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vicenteCancioCanas/geojson_translate/issues"
+    "url": "https://github.com/vicenteCancioCanas/geojson_merge/issues"
   },
   "dependencies": {
     "config": "^3.3.3",

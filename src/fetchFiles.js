@@ -11,6 +11,7 @@ const promisesForFiles = (files) => {
 };
 
 const fetchFiles = (files) => {
+  console.log("> Fetching geojson files...");
   return Promise.all(promisesForFiles(files));
 };
 
