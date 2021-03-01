@@ -6,7 +6,7 @@ const readDir = (dir) => {
     return;
   }
 
-  var pattern = new RegExp("[0-9]*_[0-9]*_[0-9]*_risk_idq.js");
+  var pattern = new RegExp("[0-9a-zA-Z_]*_risk_idq.js");
   return fs.readdirSync(dir).filter((file) => file.match(pattern));
 };
 

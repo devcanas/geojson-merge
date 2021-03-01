@@ -1,12 +1,13 @@
+const fs = require("fs");
 const fetch = require("node-fetch");
 
 const endpointForFile = (file) => {
-  return `http://covid.vps.tecnico.ulisboa.pt/data/${file}`;
+  return `${process.env.DATA_DIR}/${file}`;
 };
 
 const promisesForFiles = (files) => {
   return files.map((file) =>
-    fetch(endpointForFile(file)).then((res) => res.json())
+    fs.promises.readFile(endpointForFile(file)).then((res) => JSON.parse(res))
   );
 };
 

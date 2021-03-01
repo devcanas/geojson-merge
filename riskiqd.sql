@@ -6,5 +6,6 @@ CREATE TABLE property
   date date,
   risk float unsigned,
   iqd float unsigned,
+  isPred boolean,
   CONSTRAINT pk_property PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

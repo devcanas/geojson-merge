@@ -9,7 +9,8 @@ const process = (geojsonList, file, dates, completion) => {
     geojsonList.forEach((geojson, geojsonIndex) => {
       // create new record for Properties
       const { Risk, IQD } = geojson.features[featureIndex].properties;
-      values.push([id, `${dates[geojsonIndex]}`, Risk, IQD]);
+      const { date, isPred } = dates[geojsonIndex];
+      values.push([id, `${date}`, Risk, IQD, isPred]);
     });
     return {
       ...feature,

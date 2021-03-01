@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "dev": "export NODE_ENV=dev && node --max-old-space-size=8192 index.js",
+    "dev": "export NODE_ENV=dev DATA_DIR=/Users/devcanas/Documents/ist/meic/2_ano_1_semestre/Dashboard/geojson_merge/data && node --max-old-space-size=8192 index.js",
     "prod": "export NODE_ENV=prod && node --max-old-space-size=8192 index.js"
   },
   "repository": {
